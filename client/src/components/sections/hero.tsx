@@ -50,13 +50,13 @@ export default function Hero() {
         >
           <button
             onClick={() => scrollToSection("contact")}
-            className="bg-mountain-gold hover:bg-copper text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover-lift"
+            className="bg-mountain-gold hover:bg-copper text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover-lift shadow-lg"
           >
             Book Your Event
           </button>
           <button
             onClick={() => scrollToSection("services")}
-            className="glass-effect text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300"
+            className="glass-button text-white px-8 py-4 rounded-full text-lg font-semibold"
           >
             View Services
           </button>
@@ -69,7 +69,7 @@ export default function Hero() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute bottom-20 left-10 hidden lg:block"
       >
-        <div className="glass-effect rounded-full p-4">
+        <div className="glass-card p-6">
           <Wine className="text-mountain-gold text-2xl" size={32} />
         </div>
       </motion.div>
@@ -79,7 +79,7 @@ export default function Hero() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         className="absolute top-40 right-20 hidden lg:block"
       >
-        <div className="glass-effect rounded-full p-4">
+        <div className="glass-card p-6">
           <Sparkles className="text-mountain-gold text-2xl" size={32} />
         </div>
       </motion.div>

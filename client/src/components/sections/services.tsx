@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import { 
   Wine, 
   Users, 
@@ -109,9 +108,9 @@ export default function Services() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-white dark:bg-charcoal rounded-2xl shadow-lg hover-lift h-full">
-                <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-mountain-gold/20 rounded-full flex items-center justify-center mb-6">
+              <div className="glass-card hover-lift h-full">
+                <div className="p-8">
+                  <div className="w-16 h-16 glass-button rounded-full flex items-center justify-center mb-6">
                     <service.icon className="text-mountain-gold text-2xl" size={32} />
                   </div>
                   <h3 className="text-2xl font-playfair font-semibold mb-4 text-charcoal dark:text-white">{service.title}</h3>
@@ -124,8 +123,8 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -137,14 +136,16 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h3 className="text-2xl font-playfair font-semibold mb-4 text-charcoal dark:text-white">Ready to Plan Your Event?</h3>
-          <p className="text-lg mb-6 text-charcoal dark:text-white">Let's discuss how we can make your celebration extraordinary.</p>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="bg-mountain-gold hover:bg-copper text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover-lift"
-          >
-            Get Custom Quote
-          </button>
+          <div className="glass-card p-8">
+            <h3 className="text-2xl font-playfair font-semibold mb-4 text-charcoal dark:text-white">Ready to Plan Your Event?</h3>
+            <p className="text-lg mb-6 text-charcoal dark:text-white">Let's discuss how we can make your celebration extraordinary.</p>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="bg-mountain-gold hover:bg-copper text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover-lift shadow-lg"
+            >
+              Get Custom Quote
+            </button>
+          </div>
         </motion.div>
       </div>
     </section>
