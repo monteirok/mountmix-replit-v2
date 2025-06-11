@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
 const reviews = [
@@ -69,8 +68,8 @@ export default function Reviews() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-ice-blue/10 dark:bg-ice-blue/5 rounded-2xl hover-lift h-full">
-                <CardContent className="p-8">
+              <div className="glass-card hover-lift h-full">
+                <div className="p-8">
                   <div className="flex items-center mb-6">
                     <img
                       src={review.image}
@@ -90,8 +89,8 @@ export default function Reviews() {
                     "{review.text}"
                   </blockquote>
                   <div className="text-sm text-charcoal/70 dark:text-white/70">{review.event}</div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>

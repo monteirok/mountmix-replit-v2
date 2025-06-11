@@ -10,6 +10,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="glass-card p-8"
           >
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-forest dark:text-mountain-gold mb-6">
               Crafting Memorable Moments
@@ -33,6 +34,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
+                className="glass-button p-4 rounded-xl"
               >
                 <div className="text-3xl font-bold text-mountain-gold mb-2">200+</div>
                 <div className="text-sm uppercase tracking-wider text-charcoal dark:text-white">Events Catered</div>
@@ -42,6 +44,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
+                className="glass-button p-4 rounded-xl"
               >
                 <div className="text-3xl font-bold text-mountain-gold mb-2">5</div>
                 <div className="text-sm uppercase tracking-wider text-charcoal dark:text-white">Years Experience</div>
@@ -51,6 +54,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 viewport={{ once: true }}
+                className="glass-button p-4 rounded-xl"
               >
                 <div className="text-3xl font-bold text-mountain-gold mb-2">50+</div>
                 <div className="text-sm uppercase tracking-wider text-charcoal dark:text-white">Signature Cocktails</div>
@@ -63,11 +67,12 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="glass-card p-4"
           >
             <img
               src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
               alt="Professional mixologist crafting premium cocktails"
-              className="rounded-2xl shadow-2xl hover-lift"
+              className="rounded-xl shadow-2xl hover-lift w-full"
             />
           </motion.div>
         </div>
