@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Wine, Sparkles } from "lucide-react";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "../ui/card";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
