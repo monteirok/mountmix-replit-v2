@@ -100,8 +100,8 @@ export default function Cocktails() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="glass-effect rounded-2xl hover-lift group h-full">
-                <CardContent className="p-6">
+              <div className="glass-card hover-lift group h-full">
+                <div className="p-6">
                   <img
                     src={cocktail.image}
                     alt={cocktail.name}
@@ -116,8 +116,8 @@ export default function Cocktails() {
                   <div className="text-mountain-gold font-semibold">
                     {cocktail.price}
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
