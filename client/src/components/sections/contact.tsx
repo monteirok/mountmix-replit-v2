@@ -319,7 +319,7 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="w-12 h-12 bg-mountain-gold/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                       <Phone className="text-mountain-gold" size={20} />
                     </div>
@@ -334,7 +334,7 @@ export default function Contact() {
                         </a>
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start">
                     <div className="w-12 h-12 bg-mountain-gold/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -344,10 +344,10 @@ export default function Contact() {
                       <h4 className="font-semibold mb-1 text-charcoal dark:text-white">Email</h4>
                       <p className="text-charcoal/70 dark:text-white/70">
                         <a
-                          href="mailto:events@mountainmixology.ca"
+                          href="mailto:mountainmixologyca@gmail.com"
                           className="hover:text-mountain-gold transition-colors"
                         >
-                          events@mountainmixology.ca
+                          mountainmixologyca@gmail.com
                         </a>
                       </p>
                     </div>
@@ -391,12 +391,13 @@ export default function Contact() {
                 <p className="mb-6 text-charcoal/70 dark:text-white/70">See our latest cocktail creations and events</p>
                 <div className="flex justify-center space-x-4">
                   <a
-                    href="#"
+                    href="https://instagram.com/mountain.mixology"
+                    target="_blank"
                     className="w-12 h-12 bg-mountain-gold/20 rounded-full flex items-center justify-center hover:bg-mountain-gold hover:text-white transition-all duration-300"
                   >
                     <Instagram size={20} />
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="w-12 h-12 bg-mountain-gold/20 rounded-full flex items-center justify-center hover:bg-mountain-gold hover:text-white transition-all duration-300"
                   >
@@ -407,7 +408,7 @@ export default function Contact() {
                     className="w-12 h-12 bg-mountain-gold/20 rounded-full flex items-center justify-center hover:bg-mountain-gold hover:text-white transition-all duration-300"
                   >
                     <Linkedin size={20} />
-                  </a>
+                  </a> */}
                 </div>
               </CardContent>
             </Card>

@@ -40,16 +40,16 @@ const services = [
       "Flexible service packages"
     ]
   },
-  {
-    icon: GraduationCap,
-    title: "Cocktail Classes",
-    description: "Interactive mixology workshops for team building, bachelor parties, and cocktail enthusiasts.",
-    features: [
-      "Hands-on learning experience",
-      "Take-home recipe cards",
-      "All ingredients provided"
-    ]
-  },
+  // {
+  //   icon: GraduationCap,
+  //   title: "Cocktail Classes",
+  //   description: "Interactive mixology workshops for team building, bachelor parties, and cocktail enthusiasts.",
+  //   features: [
+  //     "Hands-on learning experience",
+  //     "Take-home recipe cards",
+  //     "All ingredients provided"
+  //   ]
+  // },
   {
     icon: Mountain,
     title: "Destination Events",

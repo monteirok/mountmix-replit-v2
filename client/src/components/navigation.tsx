@@ -33,19 +33,14 @@ export default function Navigation() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-playfair font-bold text-forest dark:text-mountain-gold"
           >
-            Mountain Mixology
+            <button className="text-2xl font-playfair font-bold text-mountain-gold" onClick={() => scrollToSection("hero")}>
+              Mountain Mixology
+            </button>
           </motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("hero")}
-              className="text-charcoal dark:text-white hover:text-mountain-gold dark:hover:text-mountain-gold transition-colors duration-300"
-            >
-              Home
-            </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-charcoal dark:text-white hover:text-mountain-gold dark:hover:text-mountain-gold transition-colors duration-300"
